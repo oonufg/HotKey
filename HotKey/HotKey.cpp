@@ -13,7 +13,7 @@ int main()
 
 	shortcuts[99] = cut;
 
-
+	
 	while (true) {
 		int ch = getch();
 		if (shortcuts.contains(ch)) {
