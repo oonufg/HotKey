@@ -14,9 +14,9 @@ void STDMessageQueue::add(IMessage* message) {
 }
 
 IMessage* STDMessageQueue::get() {
-	IMessage currentMessage = *(queueRealization->front());
+	IMessage* currentMessage = queueRealization->front();
 	queueRealization->pop();
-	return &currentMessage;
+	return currentMessage;
 }
 
 IMessageQueue* STDMessageQueue::getMessageQueue() {

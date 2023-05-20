@@ -1,5 +1,5 @@
 class IMessage {
-	void virtual getInfo() = 0;
+	int virtual getInfo() = 0;
 };
 
 class KeyboardMessage : public IMessage {
@@ -7,5 +7,5 @@ private:
 	int vck;
 public:
 	KeyboardMessage(int vck);
-	void getInfo() override;
+	int getInfo() override;
 };
