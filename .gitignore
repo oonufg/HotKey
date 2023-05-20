@@ -11,24 +11,6 @@ CTestTestfile.cmake
 _deps
 /.vs/CMake Overview
 
-*.vsidx
-*.log
-*.ipch
-*.lock
-*.wsuo
-*.db
-*.obj
-*.ibd
-*.pdb
-*.ilk
-*.exe
-
-
-
-
-
-
-/.vs/HotKey/v17/Browse.VC.db-shm
-/.vs/HotKey/v17/Browse.VC.db-wal
-/.vs/HotKey/v17/Browse.VC.opendb
-/.vs/slnx.sqlite
+/.vs
+/.git
+/out
