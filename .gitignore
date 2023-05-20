@@ -39,3 +39,15 @@ _deps
 /.vs/HotKey/v17/ipch/AutoPCH/9be4d10a4a456bbd/HOTKEY.ipch
 /.vs/HotKey/FileContentIndex/9145ee1d-4aca-49af-8795-2f8e080cad4d.vsidx
 /.vs/HotKey/FileContentIndex/a5804f68-edb9-40e2-bc00-ccd35120fa7b.vsidx
+/.vs/HotKey/FileContentIndex/6f8eaea2-4141-4f66-b9a0-aa184b157595.vsidx
+/.vs/HotKey/v17/ipch/AutoPCH/61489ad5895fc9aa/BUTTON.ipch
+/.vs/HotKey/v17/ipch/AutoPCH/63e970c2566d9177/BUTTON.ipch
+/.vs/HotKey/v17/ipch/AutoPCH/ec9d712ef67ac29c/SHORTCUT.ipch
+/.vs/HotKey/v17/ipch/AutoPCH/f2f4d30a0ede8715/SHORTCUT.ipch
+/out/build/x64-debug/.ninja_deps
+/out/build/x64-debug/.ninja_log
+/out/build/x64-debug/HotKey/HotKey.exe
+/out/build/x64-debug/HotKey/HotKey.ilk
+/out/build/x64-debug/HotKey/HotKey.pdb
+/.vs/HotKey/FileContentIndex/198fe8d1-eda1-4e52-a2fa-a903d14c2df1.vsidx
+*.vsidx
