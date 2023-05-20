@@ -9,6 +9,9 @@ Listener::Listener(IShortcutManager* shortcutManager, IMessageQueue* messageQueu
 void Listener::mainLoop() {
 	while (true) {
 		int button = getch();
-		if(shortcutManager->isExist(button))
+		if (shortcutManager->isExist(button)) {
+			messageQueue->add(new KeyboardMessage(button));
+		}
 	}
 }
+
