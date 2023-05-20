@@ -15,3 +15,7 @@ void Listener::mainLoop() {
 	}
 }
 
+void Listener::registerMessage(int ch) {
+	this->messageQueue->add(new KeyboardMessage(ch));
+}
+

@@ -5,4 +5,4 @@
 #include <map>
 #include <String>
 #include "conio.h"
-#include "Domain/Shortcut.h"
+#include "Core/ShortcutManager.h"

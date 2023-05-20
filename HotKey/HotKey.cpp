@@ -11,13 +11,16 @@ int main()
 
 	IShortcut* cut = new CombinationShortcut(buttonList, 3);
 
+	IShortcutManager* manager = new ShortcutManager();
+	manager->add(99,cut);
+
 	shortcuts[99] = cut;
 
 	
 	while (true) {
 		int ch = getch();
-		if (shortcuts.contains(ch)) {
-			shortcuts[ch]->execute();
+		if (manager->isExist(ch)) {
+			manager->execute(ch);
 			
 		}
 	}
