@@ -1,4 +1,5 @@
 class IMessage {
+public:
 	int virtual getInfo() = 0;
 };
 

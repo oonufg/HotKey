@@ -16,7 +16,8 @@ int main()
 
 	shortcuts[99] = cut;
 
-	
+	std::thread t1();
+
 	while (true) {
 		int ch = getch();
 		if (manager->isExist(ch)) {
