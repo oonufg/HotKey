@@ -1,4 +1,3 @@
-#include "conio.h"
 #include "MessageQueue.h"
 #include "ShortcutManager.h"
 

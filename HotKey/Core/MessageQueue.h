@@ -13,9 +13,8 @@ class STDMessageQueue : public IMessageQueue{
 private:
 	IMessageQueue* messageQueue = nullptr;
 	std::queue<IMessage*>* queueRealization;
-	STDMessageQueue();
-
 public:
+	STDMessageQueue();
 	~STDMessageQueue();
 	void add(IMessage* message) override;
 	IMessage* get() override;

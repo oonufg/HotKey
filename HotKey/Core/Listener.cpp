@@ -1,5 +1,5 @@
 #include "Listener.h"
-
+#include "conio.h"
 
 Listener::Listener(IShortcutManager* shortcutManager, IMessageQueue* messageQueue) {
 	this->shortcutManager = shortcutManager;
@@ -9,8 +9,10 @@ Listener::Listener(IShortcutManager* shortcutManager, IMessageQueue* messageQueu
 void Listener::mainLoop() {
 	while (true) {
 		int button = getch();
+		printf("%d", button);
 		if (shortcutManager->isExist(button)) {
 			messageQueue->add(new KeyboardMessage(button));
+			printf("Ok");
 		}
 	}
 }
