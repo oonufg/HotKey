@@ -22,12 +22,12 @@ int main()
 	Button* b1 = new Button(VK_CONTROL, "CTRL");
 	Button* b2 = new Button(VK_LSHIFT, "SHIFT");
 	Button* b3 = new Button(VK_ESCAPE, "ESC");
-	Button* buttonList[3] = { b1,b2,b3 };
+	std::vector<Button*> buttonList = { b1,b2,b3 };
 
 
-	IShortcut* cut = new CombinationShortcut(buttonList, 3);
+	IShortcut* cut = new CombinationShortcut(&buttonList);
 	IShortcutManager* manager = new ShortcutManager();
-	manager->add(117,cut);
+	manager->add(113,cut);
 
 	IMessageQueue* messagequeue = new STDMessageQueue();
 	

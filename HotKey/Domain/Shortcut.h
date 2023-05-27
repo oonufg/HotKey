@@ -1,22 +1,32 @@
 #include "Button.h"
+#include <string>
+#include <vector>
 
 class IShortcut {
-protected:
-	Button** buttonList;
-	int keyCount;
 public:
-	IShortcut(Button** ButtonList,int keyCount);
 	virtual void execute() = 0;
 };
 
 class SequenceShortcut : public IShortcut {
+protected:
+	std::vector<Button*>* buttonList;
 public:
-	SequenceShortcut(Button** buttonList, int keyCount);
+	SequenceShortcut(std::vector<Button*>* buttonList);
 	void execute() override;
 };
 
 class CombinationShortcut : public IShortcut {
+protected:
+	std::vector<Button*>* buttonList;
 public:
-	CombinationShortcut(Button** buttonList, int keyCount);
+	CombinationShortcut(std::vector<Button*>* buttonList);
+	void execute() override;
+};
+
+class ProgramShortcut : IShortcut {
+protected:
+	std::string* programPath;
+public:
+	ProgramShortcut(std::string* programPath);
 	void execute() override;
 };

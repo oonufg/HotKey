@@ -1,5 +1,6 @@
 #include "windows.h"
 
+
 class Button {
 private:
     INPUT* button;
